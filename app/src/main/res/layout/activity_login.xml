@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.view.RegisterActivity">
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_back"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        tools:ignore="ContentDescription,RtlCompat" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_back"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/log_in"
+        android:textSize="36sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/lexend_regular"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/et_email_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_textview_register"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingTop="17dp"
+        android:paddingBottom="17dp"
+        android:paddingStart="17dp"
+        tools:ignore="Autofill,RtlCompat,RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/et_pass_word_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_email_login"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/custom_textview_register"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingTop="17dp"
+        android:paddingBottom="17dp"
+        android:paddingStart="17dp"
+        tools:ignore="Autofill,RtlCompat,RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/log_in1"
+        app:layout_constraintTop_toBottomOf="@id/et_pass_word_login"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_button_register"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:paddingStart="140dp"
+        android:paddingEnd="140dp"
+        android:paddingTop="19dp"
+        android:paddingBottom="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        tools:ignore="RtlCompat,RtlSymmetry" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
