@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_new_feed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/image_new_feed_1"
+        android:layout_marginStart="10dp"
+        tools:ignore="RtlCompat" />
+
+    <ImageView
+        android:id="@+id/iv_avt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_new_feed"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/avt_1"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/iv_avt"
+        app:layout_constraintTop_toBottomOf="@id/iv_new_feed"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/name"
+        android:textSize="13sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/iv_avt"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        android:layout_marginStart="8dp"
+        android:text="@string/email1"
+        android:textSize="11sp"
+        android:textColor="#000000"
+        tools:ignore="RtlCompat,SmallSp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
